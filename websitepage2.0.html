@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seattle Area Trails</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      
+      .header {
+        background-color: #b1a5dd;
+        padding: 20px;
+        text-align: center;
+      }
+      .topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.container {text-align: center;}
+
+/* Future 2 bottom columns */
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.blue-column {
+  background-color: rgb(113, 90, 165);
+  height: 500px;
+  text-align: center;
+}
+
+.green-column {
+  background-color: rgb(105, 146, 105);
+  height: 500px;
+  text-align: center;
+}
+
+/*responsive layout*/
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+.footer {
+  background-color: #b7b7c2;
+  padding: 10px;
+  text-align: center;
+}
+ </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Seattle and Beyond Trails</h1>
+    <div>
+    <h2>All of these trails are within an hour or so of the Seattle Metro Area</h2>
+    <h2>They are a minimum of at least 3 miles and are almost all non paved unless noted</h2>
+    </div>
+    </div>
+    <div class="topnav">
+      <a href="file:///D:/codeFolder/Website1/websiteV1.1.html">Home</a>
+      <a href="file:///D:/codeFolder/Website1/websitepage2.0.html">Seattle</a>
+      <a href="https://www.example.com">Portland</a>
+      <a href="https://www.example.com">Bellingham</a>
+    </div>
+    <div class="container">
+    <ul><h2>
+      <li>West Tiger 3</li>
+      <li>Issaquah to Preston</li>
+      <li>Bridle Trails</li>
+      <li>Redmond Watershed/Powerlne Trails</li>
+      <li>Young's Lake</li>
+      <li>Tolt Pipeline Trail</li>
+      <li>Discovery Park Loop</li>
+      <li>Puget Powerline Loop</li>
+      <li>360 Park Main Loop Trail</li>
+      <li>Snolqualmie Valley Trail North</li>
+      <li>Waterline Trail</li>
+      <li>Mercer Slough/Bellevue Bluberry Loop</li>
+      <li>Evans Creek Preserve</li>
+      <li>Preston to Fall City</li>
+      <li>Palouse to Cascade Trail</li>
+      <li>Grand Ridge Park</li>
+      <li>Magnuson Park Mix</li>
+      <li>CLC Trail</li>
+      <li>East Trail to Tolt Trail</li>
+      <li>Kirkland Corridor Trail</li>
+      <li>Tuscany Equestrian Trail</li>
+      <li>Pioneer Park</li>
+      <li>Cross Kirkland Corridor</li>
+      </h2>
+    </ul>
+    </div>
+    <div class='some-page-wrapper'>
+        <div class='row'>
+          <div class='column'>
+            <div class='blue-column'>
+              <h2>Coming Soon</h2>
+              <img src="https://images.unsplash.com/photo-1600563093202-337471bde37e?q=80&w=2012&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  alt="Stroller Photo" width="350" height="350">
+            </div>
+          </div>
+          <div class='column'>
+            <div class='green-column'>
+              <h2>Seattle Area Map</h2>
+              <img src="https://cdn-assets.alltrails.com/static-map/production/lists/13932834/lists-13932834-20201115195437000000000-625x365-1.png"
+              alt="Seattle Area Map" width="350" height="350">
+            </div>
+          </div>
+        </div>
+      </div>     
+    </div>
+    <div class="footer">
+      <p>Know Another Trail? Comment Here.</p>
+      <div id="comment-container">
+    </div>
+    <textarea name="" id="new-comment" cols="60" rows="5"></textarea>
+    <br>
+    <button id="btn-post">Post</button>
+  <script>
+    document.getElementById("btn-post").addEventListener("click", function () {
+    const newComment = document.getElementById("new-comment").value;
+    const commentContainer = document.getElementById("comment-container");
+    const commentElement = document.createElement("p");
+    commentElement.innerText = newComment;
+    commentContainer.appendChild(commentElement);
+    document.getElementById("new-comment").value = "";
+});
+  </script>  
+
+</body>
+</html>
