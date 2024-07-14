@@ -1,20 +1,20 @@
-
-
 h1 {
-    font-size: 45px;
-  }
-  h2 {
-    font-size: 35px;
-  }
-  h3 {
-    font-size: 30px;
-  }
+  font-size: 45px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 30px;
+}
+
+
         body {
           margin: 0;
         }
         
         .header {
-          background-color: #c3dda5;
+          background-color: #5a86b8;
           padding: 20px;
           text-align: center;
         }
@@ -23,6 +23,7 @@ h1 {
     background-color: #333;
   }
   ul {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     list-style-type: none;
     text-align: center;
     margin: 0;

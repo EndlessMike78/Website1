@@ -1,31 +1,17 @@
 
-
-h1 {
-  font-size: 45px;
-}
-h2 {
-  font-size: 35px;
-}
-h3 {
-  font-size: 30px;
-}
       body {
         margin: 0;
       }
       
-      .header {
+      .header{
         background-color: #c3dda5;
         padding: 20px;
         text-align: center;
+       
       }
       .topnav {
   overflow: hidden;
   background-color: #333;
-}
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 .topnav a {
   float: left;
