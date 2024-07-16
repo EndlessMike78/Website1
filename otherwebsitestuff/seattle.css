@@ -1,33 +1,34 @@
 h1 {
-  font-size: 45px;
+  font-size: 65px;
+  text-shadow: 0 0 5px #fdfdfd, 0 0 9px hsl(140, 21%, 54%);
 }
 h2 {
+  text-shadow: 0 0 5px #fdfdfd, 0 0 9px hsl(140, 21%, 54%);
   font-size: 30px;
 }
 h3 {
   font-size: 30px;
 }
-
-
         body {
           margin: 0;
         }
         
         .header {
-          background-color: #5a86b8;
+          font-family: Garamond, serif;
+          background-image: url("https://media.gettyimages.com/id/1339751014/photo/rain-in-the-forest-vancouver-canada.jpg?s=612x612&w=0&k=20&c=9OWQKb3u7p2DpSDrxDTS7uBqawrjtuKycrcthLVNpZA=");
           padding: 20px;
           text-align: center;
         }
-        .topnav {
+        ul {
+          font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          list-style-type: none;
+          text-align: center;
+          margin: 0;
+          padding: 0;
+        }
+  .topnav {
     overflow: hidden;
-    background-color: #333;
-  }
-  ul {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    list-style-type: none;
-    text-align: center;
-    margin: 0;
-    padding: 0;
+    background-color: #4eac65;
   }
   .topnav a {
     float: left;
@@ -39,8 +40,13 @@ h3 {
   }
   
   .topnav a:hover {
-    background-color: #f3ecec;
+    background-color: #0a6320;
     color: rgb(0, 0, 0);
+  }
+  .topnav a:active {
+    background-color:rgb(20, 192, 92);
+    box-shadow: 0 5px #056337;
+    transform: translateY(4px);
   }
   .container {
     padding: 45px;
